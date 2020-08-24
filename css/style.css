@@ -1,14 +1,15 @@
 * {
   margin: 0px;
-  padding: 0px
+  padding: 0px;
+  overflow-x: hidden;
 }
 html {
   width: 100%;
   width: 100%;
 }
 
-#multi-background {
-  width: 100%;
+.multi-background {
+  width: 100vw;
   height: 100vh;
   background-color: #555;
   background-image: url('../images/5.png'),
@@ -17,26 +18,14 @@ html {
                     url('../images/2.png'),
                     url('../images/1.png');
   background-size: 100vw 100%;
-  animation: multi-background linear 100s infinite;
+  background-position: 0px 0px;
+  animation: multi-background 50s linear infinite;
 }
 
-#bart{
-	background:url(images/bart.png);
-	width: 86px;
-	height: 200px;
-	animation: walk 1s steps(8) infinite, forward linear 5s infinite;
-}
-@keyframes walk {
-	from { background-position: 0px; }
-	to { background-position: 200px; }
-}
-@keyframes forward {
-    from{
-      transform: translateX(-100px);
-    }
-    to{
-      transform: translateX(200px);
-    }
+.bart{
+  width: 85px;
+  height: 200px;
+  background-image: url('../images/bart.png');
 }
 
 @keyframes multi-background {
