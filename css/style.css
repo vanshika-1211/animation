@@ -1,19 +1,57 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px
 }
-body{
-  margin: 0;
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-  overflow-y: hidden;
-  background-repeat: no-repeat;
+html {
+  width: 100%;
+  width: 100%;
 }
-#Park .skyline{
-  height: 80vh;
-  width: 70vw;
-  margin: 5rem auto;
-  position: relative;
-  box-shadow: 1px 2px 10px rgba(0, 0, 255, 0.4);
-  overflow-x: hidden;
+
+#multi-background {
+  width: 100%;
+  height: 100vh;
+  background-color: #555;
+  background-image: url('../images/5.png'),
+                    url('../images/4.png'),
+                    url('../images/3.png'),
+                    url('../images/2.png'),
+                    url('../images/1.png');
+  background-size: 100vw 100%;
+  animation: multi-background linear 100s infinite;
+}
+
+#bart{
+	background:url(images/bart.png);
+	width: 86px;
+	height: 200px;
+	animation: walk 1s steps(8) infinite, forward linear 5s infinite;
+}
+@keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: 200px; }
+}
+@keyframes forward {
+    from{
+      transform: translateX(-100px);
+    }
+    to{
+      transform: translateX(200px);
+    }
+}
+
+@keyframes multi-background {
+  from {
+    background-position: 0px 0px,
+                         0px 0px,
+                         0px 0px,
+                         0px 0px,
+                         0px 0px;
+  }
+  to {
+    background-position: 7800px 0px,
+                         6500px 0px,
+                         5200px 0px,
+                         3900px 0px,
+                         2600px 0px;
+  }
 }
