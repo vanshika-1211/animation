@@ -19,6 +19,7 @@ html {
                     url('../images/1.png');
   background-size: 100vw 100%;
   background-position: 0px 0px;
+  animation: multi-background 50s linear infinite;
 }
 
 .man{
@@ -29,6 +30,7 @@ html {
   width: 148px;
   height: 300px;
   overflow-y: hidden;
+  animation: walk 2s steps(8) infinite, forward 12s linear infinite;
 }
 
 @-webkit-keyframes walk {
