@@ -22,13 +22,19 @@ html {
 }
 
 #startbtn{
-  bottom: 5%;
-  left: 45%;
+  position: absolute;
+  border-radius: 4px;
+  width: 120px;
+  bottom: 8%;
+  left: 44%;
 }
 
 #stopbtn{
-  bottom: 5%;
-  left: 45%;
+  position: absolute;
+  border-radius: 4px;
+  width: 120px;
+  bottom: 8%;
+  left: 54%;
 }
 
 #man{
@@ -41,7 +47,7 @@ html {
   overflow-y: hidden;
 }
 
-@-webkit-keyframes walk {
+@keyframes walk {
   from{
     background-position: 1186px;
   }
@@ -50,7 +56,7 @@ html {
   }
 }
 
-@-webkit-keyframes forward {
+@keyframes forward {
   from{
     transform: translateX(-100px);
   }
@@ -59,7 +65,7 @@ html {
   }
 }
 
-@-webkit-keyframes bg {
+@keyframes bg {
   from {
     background-position: 7800px 0px,
                          6500px 0px,
