@@ -1,4 +1,4 @@
-var tID;
+var tID1,tID2;
 var sprite = document.getElementById('man');
 
 function animateScript() {

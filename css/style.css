@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
 }
 html {
   width: 100%;
@@ -27,7 +26,7 @@ html {
   width: 148px;
   background-image: url('../images/man.png');
   bottom: 15%;
-  left: 0%;
+  left: 50%;
 }
 
 @keyframes bg {
