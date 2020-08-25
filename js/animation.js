@@ -1,4 +1,3 @@
-<script>
 let tID
 function animateWalk(){
   const imgCount=8;
@@ -16,4 +15,3 @@ function animateWalk(){
     }
   },interval)
 }
-</script>
