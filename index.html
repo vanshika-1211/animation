@@ -9,11 +9,22 @@
   </head>
 
   <body>
-      <div class="multi-background"> </div>
-      <div class="man"> </div>
-       <button onclick="animateWalk()">Start</button>
-       <button onclick="stopAnimate()">Stop</button>
-      <script src="../js/animation.js" type="text/javascript"> </script>
+      <div id="bg"> </div>
+      <div id="man"> </div>
+      <button id="startbtn">Start</button>
+      <button id="stopbtn">Stop</button>
+      <script>
+      startbtn.addEventListener("click", function(){
+      man.style.webkitAnimation = "walk 2s steps(8) infinite";
+      man.style.webkitAnimation = "forward 12s linear infinite";
+      bg.style.webkitAnimation = "bg 50s linear infinite";
+      });
+      stopbtn.addEventListener("click", function(){
+        man.style.webkitAnimation = "";
+        man.style.webkitAnimation = "";
+        bg.style.webkitAnimation = "";
+      });
+      </script>
   </body>
 
 </html>
