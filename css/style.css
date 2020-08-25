@@ -19,7 +19,6 @@ html {
                     url('../images/1.png');
   background-size: 100vw 100%;
   background-position: 0px 0px;
-  animation: multi-background 50s linear infinite;
 }
 
 .man{
@@ -30,10 +29,9 @@ html {
   width: 148px;
   height: 300px;
   overflow-y: hidden;
-  animation: walk 2s steps(8) infinite, forward 12s linear infinite;
 }
 
-@keyframes walk {
+@-webkit-keyframes walk {
   from{
     background-position: 1186px;
   }
@@ -42,7 +40,7 @@ html {
   }
 }
 
-@keyframes forward {
+@-webkit-keyframes forward {
   from{
     transform: translateX(-100px);
   }
@@ -51,7 +49,7 @@ html {
   }
 }
 
-@keyframes multi-background {
+@-webkit-keyframes multi-background {
   from {
     background-position: 7800px 0px,
                          6500px 0px,
