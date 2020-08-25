@@ -19,16 +19,19 @@ html {
                     url('../images/1.png');
   background-size: 100vw 100%;
   background-position: 0px 0px;
-  animation: multi-background 50s linear infinite;
+  background-repeat: repeat-x, repeat-x, repeat-x, repeat-x, repeat-x;
 }
 
 .bart{
-  width: 85px;
+  position: absolute;
+  bottom: 15%;
+  right: 0%;
+  width: 85.1px;
   height: 200px;
-  background-image: url('../images/bart.png');
+  overflow-y: hidden;
 }
 
-@keyframes multi-background {
+/*@keyframes multi-background {
   from {
     background-position: 0px 0px,
                          0px 0px,
@@ -43,4 +46,4 @@ html {
                          3900px 0px,
                          2600px 0px;
   }
-}
+}*/
