@@ -5,7 +5,7 @@ function animateScript() {
   bg.style.animation = "bg 50s linear infinite";
   var position = 0;
   const interval = 150;
-  const diff = 148;
+  const diff = 148.35;
   tID = setInterval(() => {
     sprite.style.backgroundPosition = `-${position}px 0px`;
     if (position < 1186) {

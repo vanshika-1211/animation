@@ -23,10 +23,10 @@ html {
 #man{
   position: absolute;
   height: 300px;
-  width: 148px;
+  width: 148.35px;
   background-image: url('../images/man.png');
   bottom: 15%;
-  left: 50%;
+  left: 40%;
 }
 
 @keyframes bg {
@@ -43,39 +43,5 @@ html {
                          0px 0px,
                          0px 0px,
                          0px 0px;
-  }
-}
-
-@media only screen and (min-width: 750px) and (max-width: 1000px) {
-  #startbtn{
-    position: absolute;
-    border-radius: 4px;
-    width: 85px;
-    bottom: 8%;
-    left: 40%;
-  }
-  #stopbtn{
-    position: absolute;
-    border-radius: 4px;
-    width: 85px;
-    bottom: 8%;
-    left: 51%;
-  }
-}
-
-@media only screen and (min-width: 650px) and (max-width: 750px) {
-  #startbtn{
-    position: absolute;
-    border-radius: 4px;
-    width: 80px;
-    bottom: 8%;
-    left: 38%;
-  }
-  #stopbtn{
-    position: absolute;
-    border-radius: 4px;
-    width: 80px;
-    bottom: 8%;
-    left: 49%;
   }
 }
